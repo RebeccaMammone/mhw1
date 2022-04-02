@@ -1,0 +1,252 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: bisque;
+    color: mediumslateblue;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 1.5em;
+}
+
+
+
+header {
+    color: white;
+    background-image: url(immagini/sfondo.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center
+    
+  
+}
+
+
+
+#overlay{
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1{
+    position: relative;
+    top: 100px;
+    font-size: 130px;
+    font-family: 'Boogaloo', cursive;
+}
+
+
+
+nav{
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+}
+
+
+
+#menu {
+    display: none;
+}
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+  
+
+
+
+a {
+    border: 3px solid whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 20px;
+    background-color: lightsteelblue;
+    font-weight: bold;
+}
+
+section{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   font-size: 18px;
+   font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+
+div.button{
+    color: lavender;
+    margin: 50px; 
+}
+
+h3{
+    font-size: 30px;
+}
+
+h2{
+    position: relative;
+    font-weight: normal;
+    font-size: 22px;
+    top: 20px;
+}
+
+
+#container, #container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+}
+
+
+
+a.meta1, a.meta2, a.meta3, a.meta4{
+    border-radius: 0;
+    width: 20vw;
+    height: 70vh;
+    font-size: 50px;
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+a.meta1{
+    background-image: url(immagini/londra2.jpeg);
+    background-size: cover;
+}
+
+a.meta2{
+    background-image: url(immagini/newyork2.jpeg);
+    background-size:cover;
+}
+
+a.meta3{
+    background-image: url(immagini/lisbona2.jpeg);
+    background-size: cover;
+}
+
+a.meta4{
+    background-image: url(immagini/edimburgo2.jpeg);
+    background-size: cover;
+}
+
+.post{
+    background-color: lavender;
+    border: 2px solid lightsteelblue;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+}
+
+.profilo{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+
+.profilo img{
+    width: 150px; 
+    margin: 15px;
+}
+
+.profilo h4, .profilo em{
+    position : relative;
+    margin-bottom: 0;
+}
+
+.profilo h4{
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    
+}
+
+
+a.altro{
+    color: whitesmoke;
+    align-self: end;
+}
+
+
+
+footer{
+    background-color: lightsteelblue;
+    color: whitesmoke;
+    height: 200px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 250px;   
+    }
+
+    header h1 {
+    font-size: 50px;
+    top: 10px;
+    }
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #container-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.meta1, a.meta2, a.meta3, a.meta4{
+        font-size: 25px;
+    }
+}
+
+
