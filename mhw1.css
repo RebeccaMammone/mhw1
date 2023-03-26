@@ -1,0 +1,181 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #022d2d;
+    color: mediumslateblue;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 1.5em;
+    color: #022d2d;
+}
+
+
+header {
+    color: white;
+    background-image: url(immagini/sfondol.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+ }
+
+.container{
+    background-color: whitesmoke; 
+    margin: 60px;
+    width: 66.67%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+section #descrizione{
+    text-align: left;
+}
+
+#overlay{
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1{
+    position: relative;
+    top: 100px;
+    font-size: 100px;
+    font-family: 'Boogaloo', cursive;
+}
+
+
+nav{
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+}
+
+header img{
+    position: relative;
+    width: 100px;
+    z-index: 2;
+    top: 190px;
+}
+
+section img{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div.numero{
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+
+
+h3, h4{
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
+#menu {
+    display: none;
+}
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+  
+
+a {
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #ed7d51;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: #ed7d51;
+    color: whitesmoke;
+    height: 200px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 250px;   
+    }
+
+    header h1 {
+    font-size: 50px;
+    top: 10px;
+    }
+
+    header img{
+        position: relative;
+        width: 50px;
+        top: 40px;
+    }
+
+    div.numero, h3, h4{
+        font-size: 30px;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+}
